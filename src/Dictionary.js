@@ -5,7 +5,7 @@ import Results from "./Results"
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState("");
-    let [results, setResults] = useState(null);
+    let [results, setResults] = useState("");
 
     function handleResponse(response) {
         setResults(response.data[0]);
@@ -23,9 +23,9 @@ export default function Dictionary() {
     }
 
     return (
-        <div className="dictionary">
+        <div className="dictionary">  
             <form onSubmit={search}>
-                <input type="search" onChange={handleKeywordChange} autoFocus={true} />
+                <input type="search" placeholder="Search for a word.." onChange={handleKeywordChange} autoFocus={true} />
             </form>
             <Results results={results}/>
 </div>

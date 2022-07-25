@@ -1,0 +1,9 @@
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.Part-of-speech {
+    text-transform: capitalize;
+    margin: 10px;
+}
